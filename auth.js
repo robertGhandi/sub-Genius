@@ -1,3 +1,3 @@
 function closeBtn() {
-    window.location.href = "./landingPage.html"
+    window.location.href = "./index.html"
 }
