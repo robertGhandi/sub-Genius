@@ -10,18 +10,31 @@
 		<nav class="navbar">
 			<div class="container">
 				<div class="logo"><span id="sub">Sub</span>Genius</div>
-				
+
 				<ul class="nav">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
-					<li><a href="#">Our plans</a></li>
+
+					<li class="dropdown">
+						<a href="#" class="nav-link dropdown-toggle"
+							>Our plans</a
+						>
+						<ul class="dropdown-menu">
+							<li><a href="#">option 1</a></li>
+							<li>
+								<a href="#">option 2</a>
+							</li>
+						</ul>
+					</li>
+
 					<li><a href="#">Resources</a></li>
 				</ul>
-                <div>
-                    <button class="signup-btn" onclick="SignUp()" >Sign Up</button>
-                    <button class="login-btn" onclick="LogIn()" >Log in</button>
-                </div>
-				
+				<div>
+					<button class="signup-btn" onclick="SignUp()">
+						Sign Up
+					</button>
+					<button class="login-btn" onclick="LogIn()">Log in</button>
+				</div>
 			</div>
 		</nav>
 		<section class="hero-section">
@@ -115,7 +128,9 @@
 		<section class="testimonial-section">
 			<h2>What our customers are saying</h2>
 			<div class="testimonial-card">
-				<button class="nav-button left"  onclick="showPrevious()" >&lt;</button>
+				<button class="nav-button left" aria-label="Previous">
+					&lt;
+				</button>
 
 				<div class="testimonial-content">
 					<div class="customer-photo">
@@ -154,7 +169,9 @@
 					</div>
 				</div>
 
-				<button class="nav-button right"  onclick="showNext()" >&gt;</button>
+				<button class="nav-button right" onclick="showNext()">
+					&gt;
+				</button>
 			</div>
 
 			<div class="carousel-indicators">

@@ -29,7 +29,7 @@ ul {
 }
 
 #sub {
-    color: #7f56d8;
+	color: #7f56d8;
 }
 
 .navbar a {
@@ -47,7 +47,7 @@ ul {
 }
 
 .navbar a:hover {
-	color: lightskyblue;
+	color: #7a57d1;
 }
 
 .navbar ul {
@@ -58,6 +58,34 @@ ul {
 	margin-left: 20px;
 }
 
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	background: #fff;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	list-style: none;
+	padding: 0.5rem 0;
+
+	border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.dropdown-menu li {
+	padding: 0.5rem 1rem;
+	padding-left: 5px;
+}
+
+.dropdown-menu li a {
+	text-decoration: none;
+	color: #333;
+}
+
+.dropdown-menu li a:hover {
+	color: #7a57d1;
+}
 
 .signup-btn {
 	border-radius: 8px;
@@ -65,15 +93,16 @@ ul {
 	background-color: #7f56d8;
 	cursor: pointer;
 	padding: 12px 12px;
-    color: white;
-    
+	color: white;
 }
 
 .login-btn {
-    padding: 12px;
-    cursor: pointer;
-    border: none;
-    border-radius: 8px;
+    background: transparent;
+    color: #7a57d1;
+	padding: 12px;
+	cursor: pointer;
+	border: 1px solid #7a57d1;
+	border-radius: 8px;
 }
 
 .hero-section {
@@ -105,18 +134,18 @@ ul {
 
 .trial-button {
 	background-color: #7f56d8;
-    color: white;
+	color: white;
 	margin-top: 30px;
 	padding: 12px;
 	border-radius: 8px;
 	border: none;
+	cursor: pointer;
 }
 
 .statement .article {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 20px;
-    
 }
 
 .statement h3 {
@@ -132,7 +161,6 @@ ul {
 	margin: 20px 10px;
 	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
 	padding: 15px 20px;
-    
 }
 
 .box p {
@@ -141,8 +169,8 @@ ul {
 }
 
 .box:hover {
-    transform: translateY(-10px);
-    transition: transform 0.3s ease;
+	transform: translateY(-10px);
+	transition: transform 0.3s ease;
 }
 
 .features {
@@ -160,17 +188,15 @@ ul {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 20px;
-    
 }
 
 .features .box {
 	text-align: center;
-    transition: transform 0.3s ease;
+	transition: transform 0.3s ease;
 }
 
 .features .box:hover {
-    transform: translateY(-10px);
-    
+	transform: translateY(-10px);
 }
 
 .features img {
@@ -178,12 +204,12 @@ ul {
 }
 
 .features h3 {
-    font-size: 15px;
+	font-size: 15px;
 }
 
 .features a {
-    margin-top: 10px;
-    display: inline-block;
+	margin-top: 10px;
+	display: inline-block;
 }
 
 h2 {
@@ -192,7 +218,6 @@ h2 {
 	font-size: 1.5rem;
 	color: #111;
 }
-
 
 .testimonial-section {
 	width: 100%;
@@ -203,14 +228,14 @@ h2 {
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
 	text-align: center;
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .testimonial-card {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	
+
 	margin: 1.5rem 0;
 }
 
@@ -226,7 +251,7 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-    transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .nav-button:hover {
@@ -236,25 +261,23 @@ h2 {
 .testimonial-content {
 	flex: 1;
 	display: none;
-    transition: opacity 0.5s ease;
-	
+	transition: opacity 0.5s ease;
 }
 
 .testimonial-content.active {
-    display: flex;
-    opacity: 1;
+	display: flex;
+	opacity: 1;
 }
 
 .testimonial-section h2 {
-    margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .customer-photo img {
-    
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-	
+	margin-top: 50px;
 }
 
 .testimonial-text {
@@ -263,16 +286,16 @@ h2 {
 
 .testimonial-text p {
 	padding-left: 20px;
-    padding-right: 20px;
+	padding-right: 20px;
+	padding-top: 50px;
 }
 
 .customer-name {
-    margin-top: 30px;
-    text-align: center;
+	margin-top: 30px;
+	text-align: center;
 	font-weight: bold;
 	color: #555;
 }
-
 
 .carousel-indicators {
 	display: flex;
@@ -291,7 +314,6 @@ h2 {
 .dot.active {
 	background-color: #8c52ff;
 }
-
 
 .footer {
 	background-color: #1a1a1a;
@@ -339,7 +361,6 @@ h2 {
 	color: #ffffff;
 }
 
-
 .footer-section h3 {
 	font-size: 1.2rem;
 	margin-bottom: 0.5rem;
@@ -364,7 +385,6 @@ h2 {
 	color: #ffffff;
 }
 
-
 .footer-bottom {
 	text-align: center;
 	margin-top: 2rem;
@@ -376,13 +396,16 @@ h2 {
 	margin: 0;
 }
 
-
 @media (max-width: 768px) {
-    .navbar ul {
-        display: none;
-    }
+	.navbar ul {
+		display: none;
+	}
 
-    .hero-section .container {
-        flex-direction: column;
-    }
+	.hero-section .container {
+		flex-direction: column;
+	}
+
+	.hero-section h1 {
+		padding-top: 20px;
+	}
 }
